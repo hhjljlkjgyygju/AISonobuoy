@@ -40,7 +40,7 @@ google-auth==2.12.0
     # via
     #   google-auth-oauthlib
     #   tensorboard
-google-auth-oauthlib==0.4.6
+google-auth-oauthlib==0.5.3
     # via tensorboard
 google-pasta==0.2.0
     # via tensorflow
@@ -56,18 +56,19 @@ idna==3.3
     # via requests
 importlib-metadata==4.11.4
     # via
+    #   jax
     #   markdown
     #   numba
+jax==0.4.13
+    # via tensorflow
 joblib==1.1.0
     # via
     #   librosa
     #   scikit-learn
-keras==2.10.0
+keras==2.12.0
     # via
     #   -r requirements.in
     #   tensorflow
-keras-preprocessing==1.1.2
-    # via tensorflow
 kiwisolver==1.4.4
     # via matplotlib
 libclang==14.0.6
@@ -82,6 +83,8 @@ markupsafe==2.1.1
     # via werkzeug
 matplotlib==3.5.2
     # via -r requirements.in
+ml-dtypes==0.2.0
+    # via jax
 mpmath==1.2.1
     # via sympy
 numba==0.56.0
@@ -92,9 +95,10 @@ numpy==1.22.4
     # via
     #   -r requirements.in
     #   h5py
-    #   keras-preprocessing
+    #   jax
     #   librosa
     #   matplotlib
+    #   ml-dtypes
     #   numba
     #   onnx
     #   onnx2keras
@@ -121,7 +125,9 @@ onnxruntime==1.12.1
 opencv-python==4.6.0.66
     # via -r requirements.in
 opt-einsum==3.3.0
-    # via tensorflow
+    # via
+    #   jax
+    #   tensorflow
 packaging==21.3
     # via
     #   librosa
@@ -136,7 +142,7 @@ pillow==9.2.0
     # via matplotlib
 pooch==1.6.0
     # via librosa
-protobuf==3.9.2
+protobuf==4.25.4
     # via
     #   onnx
     #   onnxruntime
@@ -177,6 +183,7 @@ scikit-learn==1.1.1
     # via librosa
 scipy==1.8.1
     # via
+    #   jax
     #   librosa
     #   scikit-learn
 six==1.16.0
@@ -185,26 +192,22 @@ six==1.16.0
     #   google-auth
     #   google-pasta
     #   grpcio
-    #   keras-preprocessing
     #   onnx
-    #   protobuf
     #   python-dateutil
     #   tensorflow
 soundfile==0.10.3.post1
     # via librosa
 sympy==1.11.1
     # via onnxruntime
-tensorboard==2.10.0
+tensorboard==2.12.3
     # via tensorflow
-tensorboard-data-server==0.6.1
+tensorboard-data-server==0.7.2
     # via tensorboard
-tensorboard-plugin-wit==1.8.1
-    # via tensorboard
-tensorflow==2.10.0
+tensorflow==2.12.1
     # via
     #   -r requirements.in
     #   onnx2keras
-tensorflow-estimator==2.10.0
+tensorflow-estimator==2.12.0
     # via tensorflow
 tensorflow-io-gcs-filesystem==0.27.0
     # via tensorflow
