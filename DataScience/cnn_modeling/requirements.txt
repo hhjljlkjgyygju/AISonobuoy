@@ -44,7 +44,7 @@ google-auth-oauthlib==0.4.6
     # via tensorboard
 google-pasta==0.2.0
     # via tensorflow
-grpcio==1.49.1
+grpcio==1.53.2
     # via
     #   tensorboard
     #   tensorflow
@@ -184,7 +184,6 @@ six==1.16.0
     #   astunparse
     #   google-auth
     #   google-pasta
-    #   grpcio
     #   keras-preprocessing
     #   onnx
     #   protobuf
